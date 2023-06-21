@@ -12,7 +12,7 @@ const addDescription = async () => {
         const currentTimeString = time2.substring(0, 10) + ' , Time: ' + time2.substring(11,19);
   setCurrentTime(currentTimeString);
   await addDescription1({ description, amount, currentTime: currentTimeString });
-  updateBalance(parseFloat(amount));
+  updateBalance(-parseFloat(amount));
 };
 
     return (
